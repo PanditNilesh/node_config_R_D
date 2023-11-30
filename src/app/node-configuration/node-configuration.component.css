@@ -1,0 +1,25 @@
+body {
+  background: url("src/assets/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 145%;
+}
+.col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff7a !important;
+}
+.add-btn {
+  color: white !important;
+  background-image: linear-gradient(45deg, #000000, #d69df6);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: white;
+}

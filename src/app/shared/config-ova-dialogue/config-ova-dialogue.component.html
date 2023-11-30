@@ -1,0 +1,30 @@
+<div mat-dialog-content>
+  <form [formGroup]="configOvaForm">
+    <div class="float-right close-button">
+      <mat-icon mat-dialog-close>close</mat-icon>
+    </div>
+    <mat-form-field aria-disabled="true" class="mat-form-field" appearance="outline">
+      <mat-label for="RP_code">RP Code</mat-label>
+      <input matInput id="RP_code" formControlName="rp_code" [readonly]="disableInput" placeholder="RP Code" />
+    </mat-form-field>
+    <mat-form-field class="mat-form-field" appearance="outline">
+      <mat-label for="ova">OVA</mat-label>
+      <input matInput id="ova" formControlName="ova" placeholder="OVA" />
+    </mat-form-field>
+    <mat-form-field class="mat-form-field" appearance="outline">
+      <mat-label for="sp_code">SP Code</mat-label>
+      <input matInput id="sp_code" formControlName="sp_code" [readonly]="disableInput" placeholder="SP Code" />
+    </mat-form-field>
+  </form>
+  <div mat-dialog-actions class="d-flex justify-content-center submit-button">
+    <button
+      mat-button
+      mat-dialog-close
+      cdkFocusInitial
+      (click)="onClickAddOva()"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+

@@ -1,0 +1,49 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.partner-heading {
+  background-color: #f1f1f1;
+}
+
+.partner-heading span {
+  border-bottom: 2px solid black;
+}
+
+.main-table {
+  /* width: 100%; */
+  overflow-x: auto;
+}
+
+.main-table th {
+  background-color: #f8f9fa !important;
+  overflow-x: auto;
+  text-align: center !important;
+}
+
+.search-input {
+  width: 200px !important;
+  margin-left: 12px;
+}
+
+.main-table th {
+  background-color: #3f51b5 !important;
+  color: white !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+}
+
+.main-table tr:nth-child(even) {
+  background-color: #ecefff !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+.pt-20{
+    padding-top: 20px; 
+}

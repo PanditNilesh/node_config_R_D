@@ -1,0 +1,125 @@
+body {
+  background: url("src/assets/img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 390px !important;
+  height: auto;
+}
+
+.card input {
+  color: white;
+  background-color: black;
+  width: 336px;
+  border: 1px solid #e2e2e2;
+  margin-left: 18px;
+  padding: 5px;
+}
+
+input:focus {
+  border: 1px solid #feee00 !important;
+  outline: none;
+}
+
+
+.submit-button{
+  background-color: #000 !important;
+  border: 1px solid #FEEE00 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-family: Roboto;
+  border: 0px;
+  width: 336px;
+  height: 38px;
+  margin: 32px 0 8px 15px;
+}
+
+.submit-button:hover{
+  background-color: #FEEE00 !important;
+  color: #000 !important;
+}
+
+.submit-button:disabled{
+  border: none !important;
+  background-color: gray !important;
+  color: #fff !important;
+}
+
+.main-logo {
+  margin: -15px 0;
+}
+
+.curbi {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.back-to-login {
+  margin-left: 15px;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* .submit-button:disabled {
+  background-color: gray !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-family: Roboto;
+  border: 0px;
+  width: 336px;
+  height: 38px;
+  margin: 32px 0 8px 15px;
+} */
+
+/* .submit-button:hover{
+  background-color: #FEEE00 !important;
+  color: #000 !important;
+} */
+
+.forgot-pass-heading {
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 18px;
+}
+
+.main-data {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 18px;
+}
+
+.errors{
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 18px;
+  margin-top: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

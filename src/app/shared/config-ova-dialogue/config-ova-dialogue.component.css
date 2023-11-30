@@ -1,0 +1,28 @@
+.mat-form-field{
+    width: 300px;
+}
+
+mat-icon{
+    color: red;
+    font-size: 15px;
+    margin-right: -10px;
+}
+
+.submit-button{
+    margin-bottom: -20px;
+}
+    
+.submit-button button{
+    background: gray;
+    color: #fff;
+    margin-top: -30px;
+}
+
+.submit-button button:hover{
+    background: #007bff !important;
+    color: #fff;
+}
+
+.close-button mat-icon:hover{
+    color: red !important;
+}

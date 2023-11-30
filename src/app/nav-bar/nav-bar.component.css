@@ -1,0 +1,132 @@
+body {
+  background: url("src/assets/img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo{
+  width: 15%;
+  height: 15%;
+}
+
+.main-logo-div{
+  background-color: black;
+}
+
+.nav-link{
+  border-radius: 5px;
+  /* background-color: #3f51b5; */
+  border: 1px solid #3f51b5;
+  box-shadow: 3px 3px 3px 3px gray;
+  color: #3f51b5 !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: #fff !important;
+  font-weight: 500;
+  background-color: #3f51b5;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* width: 50% !important; */
+}
+
+.card {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 390px !important;
+  height: 450px !important;
+}
+
+.card input {
+  color: white;
+  background-color: black;
+  width: 336px;
+  border: 1px solid #e2e2e2;
+  margin-left: 18px;
+  padding: 5px;
+}
+
+input:focus {
+  border: 1px solid #3f51b5 !important;
+  outline: none;
+}
+
+.submit-button {
+  background-color: #3f51b5 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-family: Roboto;
+  border: 0px;
+  width: 336px;
+  height: 38px;
+  margin: 32px 0 8px 15px;
+}
+
+.main-logo {
+  margin: -15px 0;
+}
+
+.curbi {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.back-to-login {
+  margin-left: 15px;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-button:disabled {
+  background-color: gray !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-family: Roboto;
+  border: 0px;
+  width: 336px;
+  height: 38px;
+  margin: 32px 0 8px 15px;
+}
+
+.forgot-pass-heading {
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 18px;
+}
+
+.main-data {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 18px;
+}
+
+@media (max-width: 768px)  {
+  .nav-link{
+    width: max-content;
+    height: max-content;
+    font-size: 12px !important;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .logout-btn{
+    width: max-content;
+    font-size: 12px !important;
+    padding: 5px;
+  }
+}

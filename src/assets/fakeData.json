@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "partner_code": "MOOVTG1",
+        "name": "Moon Togo1",
+        "operator": "MOOV1",
+        "currency" :"XOF1",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar1",
+        "country": "US",
+        "jar_parameters" : [2,"mfs_trns_id","amount"]
+    },
+    {
+        "id":2,
+        "partner_code": "MOOVTG2",
+        "name": "Moon Togo2",
+        "operator": "MOOV2",
+        "currency" :"XOF2",
+        "method": "Transfer2",
+        "jar_file" : "MoovClient.jar2",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":3,
+        "partner_code": "MOOVTG3",
+        "name": "Moon Togo3",
+        "operator": "MOOV3",
+        "currency" :"XOF3",
+        "method": "Transfer3",
+        "jar_file" : "MoovClient.jar3",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":4,
+        "partner_code": "MOOVTG",
+        "name": "Moon Togo",
+        "operator": "MOOV",
+        "currency" :"XOF",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":5,
+        "partner_code": "MOOVTG",
+        "name": "Moon Togo",
+        "operator": "MOOV",
+        "currency" :"XOF",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":6,
+        "partner_code": "MOOVTG",
+        "name": "Moon Togo",
+        "operator": "MOOV",
+        "currency" :"XOF",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":7,
+        "partner_code": "MOOVTG",
+        "name": "Moon Togo",
+        "operator": "MOOV",
+        "currency" :"XOF",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":8,
+        "partner_code": "MOOVTG",
+        "name": "Moon Togo",
+        "operator": "MOOV",
+        "currency" :"XOF",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":9,
+        "partner_code": "MOOVTG",
+        "name": "Moon Togo",
+        "operator": "MOOV",
+        "currency" :"XOF",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":10,
+        "partner_code": "MOOVTG",
+        "name": "Moon Togo",
+        "operator": "MOOV",
+        "currency" :"XOF",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    },
+    {
+        "id":11,
+        "partner_code": "MOOVTG100",
+        "name": "Moon Togo",
+        "operator": "MOOV",
+        "currency" :"XOF",
+        "method": "Transfer",
+        "jar_file" : "MoovClient.jar",
+        "country": "US",
+        "jar_parameters" : [2,"reciver_msisdn"]
+    }
+]

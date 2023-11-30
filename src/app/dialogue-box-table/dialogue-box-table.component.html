@@ -1,0 +1,60 @@
+<!-- <div mat-dialog-content>
+  <form [formGroup]="partnerCodeParametersForm">
+    <mat-form-field>
+      <mat-label>Partner Code</mat-label>
+      <input formControlName="partner_code" matInput />
+    </mat-form-field>
+    <mat-form-field class="ml-4">
+      <mat-label>Currency</mat-label>
+      <mat-select formControlName="currency">
+        <mat-option *ngFor="let items of currencyArray" [value]="items">{{items}}</mat-option>
+      </mat-select>
+    </mat-form-field> 
+  
+    <mat-form-field>
+      <mat-label>Operator</mat-label>
+      <input formControlName="operator" matInput />
+    </mat-form-field>
+    <mat-form-field class="ml-4">
+      <mat-label>Currency Code</mat-label>
+      <mat-select formControlName="currency_code">
+        <mat-option value="one" selected>USD</mat-option>
+        <mat-option value="two">INR</mat-option>
+        <mat-option value="two">INR</mat-option>
+        <mat-option value="two">USD</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field *ngIf="showHideMaxMin">
+      <mat-label>Min_per_Trx_Limit</mat-label>
+      <input formControlName="min_per_Trx_Limit" matInput />
+    </mat-form-field>
+    <mat-form-field class="ml-4" *ngIf="showHideMaxMin">
+      <mat-label>Max_per_Trx_Limit</mat-label>
+      <input matInput formControlName="max_per_Trx_Limit"/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>File Path</mat-label>
+      <input matInput formControlName="file_path" />
+    </mat-form-field>
+    <mat-form-field class="ml-4">
+      <mat-label>File Name</mat-label>
+      <input matInput formControlName="file_name"/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Jar Parameters</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close (click)="editTableValues($event)">Add</button>
+</div> -->
+
+<h1 mat-dialog-title>OTP Sent !!!</h1>
+<div mat-dialog-content>
+  OTP is sent to your Mail ID !! Please check your Mail.  
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>No</button>
+  <button mat-button mat-dialog-close cdkFocusInitial (click)="newPassLink()">Ok</button>
+</div>

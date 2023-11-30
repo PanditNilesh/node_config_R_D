@@ -1,0 +1,104 @@
+<app-nav-bar></app-nav-bar>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-5">
+        <form [formGroup]="partnerCodeParametersForm" class="card p-4">
+          <div>
+            <mat-form-field>
+              <mat-label>Partner Code</mat-label>
+              <input formControlName="partner_code" matInput />
+            </mat-form-field>
+            <mat-form-field class="ml-4">
+              <mat-label>Currency Code</mat-label>
+              <mat-select formControlName="currency">
+                <mat-option *ngFor="let cur of currencyList" [value]="cur.currencySymbol">{{cur.currencySymbol}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <mat-label>Operator</mat-label>
+              <input formControlName="operator" matInput />
+            </mat-form-field>
+            <mat-form-field class="ml-4">
+              <mat-label>Country Code</mat-label>
+              <mat-select formControlName="country_code">
+                <mat-option *ngFor="let co of countryList" [value]="co.countryCode">{{co.countryCode}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field *ngIf="showHideMaxMin">
+              <mat-label>Min_per_Trx_Limit</mat-label>
+              <input formControlName="min_per_Trx_Limit" matInput />
+            </mat-form-field>
+            <mat-form-field class="ml-4" *ngIf="showHideMaxMin">
+              <mat-label>Max_per_Trx_Limit</mat-label>
+              <input matInput formControlName="max_per_Trx_Limit" />
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field class="w-100" *ngIf="showHideMaxMin">
+              <mat-label>Reference</mat-label>
+              <input formControlName="reference" matInput />
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <mat-label>File Path</mat-label>
+              <input matInput formControlName="file_path" />
+            </mat-form-field>
+            <mat-form-field class="ml-4">
+              <mat-label>File Name</mat-label>
+              <input matInput formControlName="file_name" />
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <mat-label>Prefix</mat-label>
+              <input matInput formControlName="prefixVarchar" />
+            </mat-form-field>
+            <mat-form-field class="ml-4">
+              <mat-label>Curbi Code</mat-label>
+              <input matInput formControlName="curbiCodeVarchar" />
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <mat-label>Method</mat-label>
+              <mat-select formControlName="method" (valueChange)="onMethodChange($event)">
+                <mat-option *ngFor="let mt of methodTypeList" [value]="mt.methodName">{{mt.methodName}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <mat-form-field class="ml-4">
+              <mat-label>Name</mat-label>
+              <input formControlName="name" matInput>
+            </mat-form-field>
+
+          </div>
+          <div>
+            <mat-form-field class="w-100">
+              <mat-label>Jar Params</mat-label>
+              <mat-select formControlName="jar_parameters_dropDown"  (selectionChange)="onSelectChange($event)" multiple >
+                <mat-option *ngFor="let item of jarParamList" [value]="item.paramName" (click)="onChange(item.paramName)">{{item.paramName}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field class="w-100">
+              <mat-label>Jar Parameters</mat-label>
+              <textarea formControlName="jar_parameters" matInput #para
+              (keyup.enter)="onTextEdit(para.value)"
+              (blur)="onTextEdit(para.value)" ></textarea>
+            </mat-form-field>
+          </div>
+
+          <button class="add-btn" mat-button (click)="editTableValues($event)">Add</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
